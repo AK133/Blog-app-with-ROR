@@ -1,0 +1,8 @@
+<h1>All Users</h1>
+
+<% @users.each do |user| %>
+  <div class="user">
+    <h2><%= link_to user.email, user_path(user) %></h2>
+    <p>Joined on: <%= user.created_at.strftime("%B %d, %Y") %></p>
+  </div>
+<% end %>

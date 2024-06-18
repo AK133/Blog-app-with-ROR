@@ -1,0 +1,342 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .logout-button {
+  background-color: #9d463d; 
+  color: #ffffff; 
+  padding: 8px 12px; 
+  border: 1px solid; 
+  font-size: large;
+  border-radius: 13px;
+  cursor: pointer; 
+}
+
+.logout-button:hover {
+  background-color: #6f4c49;
+}
+
+ .st {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  max-width: 600px; 
+  margin: auto;
+  border: 4px solid #0c0000; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.st li {
+  padding: 15px;
+  border-bottom: 2px solid #222020; 
+}
+
+.st li:last-child {
+  border-bottom: none; 
+}
+
+.st li a {
+  text-decoration: none; 
+  color: #6c2f2f; 
+  font-weight: bold;
+  font-size: larger;
+  display: block; 
+}
+
+.st li a:hover {
+  background-color: #636161; 
+  color: #000; 
+}
+
+.delete-button {
+  background-color: #b95a5a; 
+  color: #ffffff; 
+  padding: 10px 15px; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-size: 16px;
+  transition: background-color 0.3s ease; 
+  margin-bottom: 2rem;
+}
+
+.delete-button:hover {
+  background-color: #c0392b; 
+  transform: scale(1.2);
+}
+
+.blog-posts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .blog-posts-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.post-thumbnail {
+  width: 170px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 20px; 
+  border-radius: 10px;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .post-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .post-thumbnail {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+ .edit-button {
+  background-color: #4f584f;
+  color: white; 
+  border: #131313; 
+  border-radius: 10px;
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 25px;
+  margin: 4px 2px; 
+  transition: all 0.3s ease; 
+  cursor: pointer; 
+  height: 30px; 
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.edit-button:hover {
+  background-color: #131313; 
+  transform: scale(1.1); 
+ 
+}
+
+.container ul {
+  display: flex; 
+  justify-content: space-between; 
+  list-style: none; 
+  padding: 0; 
+}
+
+.container ul li {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+
+.container ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.bar {
+  background-color: #c7a08c;
+  color:#3b2918;
+  
+}
+
+.yo{
+    text-align: center;
+    
+}
+nav {
+  background-color: #3b2918;
+  padding: 1rem;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+}
+
+
+.nav-link {
+    font-style: initial;
+    padding: 5px;
+
+} 
+.nav-link:hover {
+  color: rgb(177, 127, 91); 
+}
+.nav-link li {
+    padding: 5px;
+  }
+
+nav {
+  border-bottom: 1px solid #482b0e;
+}
+
+.container{
+   font-style: italic;
+   
+    
+}
+.post-box {
+  border: 3px solid #391805;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #a3755c;
+
+  border-radius: 20px;
+  margin-left: 300px;
+}
+
+.post-box1 {
+  border: 3px solid #391805;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #a3755c;
+  width: 60%;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.post-box h2 a {
+  text-decoration: none;
+  color: #6c2f2f; 
+  font-weight: bold;
+  display: block;
+}
+
+.post-box h2 a:hover {
+  color: #fbf9f8; 
+}
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #33200d;
+  color: #FFFFFF;
+  padding: 1rem;
+  text-align: center;
+}
+.about-section, .contact-section {
+  width: 60%;
+  background-color: #3d2c2c;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(183, 181, 181, 0.1);
+  border-radius: 8px;
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.about-section h2, .contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #fff6f6;
+}
+
+.about-section p, .contact-section p {
+  
+  font-size: 1.2em;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.contact-section form {
+  display: flex;
+  width: 50% ;
+  margin:auto;
+  flex-direction: column;
+}
+
+.contact-section form div {
+  margin-bottom: 10px;
+}
+
+.contact-section form label {
+  font-weight: bold;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact-section form button {
+  width: 100px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-section form button:hover {
+  background-color: #555;
+}
+.contact-section ul{
+  list-style-type: none;
+  color: #ffffff;
+}
+
+@media (min-width: 600px) {
+  .container ul {
+    justify-content: space-between;
+  }
+
+  .post-box {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-section, .contact-section {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-section, .contact-section {
+    width: 60%;
+  }
+}

@@ -1,0 +1,25 @@
+<div class="post-box">
+  <h1><%= @blog_post.title %></h1>
+  <h2><%= @blog_post.body %></h2>
+
+  <% if @blog_post.image_url.present? %>
+    <img src="<%= @blog_post.image_url %>" alt="<%= @blog_post.title %>" class="post-image">
+  <% end %>
+<% unless @blog_post.user==current_user %>
+  <div id="like_button">
+    <% if user_signed_in? %>
+      <% if @blog_post.likes.exists?(user: current_user) %>
+        <%= button_to 'Unlike', blog_post_like_path(@blog_post, @blog_post.likes.find_by(user: current_user)), method: :delete, remote: true %>
+      <% else %>
+        <%= button_to 'Like', blog_post_likes_path(@blog_post), method: :post, remote: true %>
+      <% end %>
+    <% end %>
+  </div>
+<% end %>
+  <p>Likes: <%= @blog_post.like_counter %></p>
+</div>
+<% if @show_edit %>
+  <%= link_to "Edit", edit_blog_post_path(@blog_post), class: "edit-button" if user_signed_in? %>
+<% end %>
+<%= link_to 'Back', blog_posts_path, class: 'edit-button' %>
+
