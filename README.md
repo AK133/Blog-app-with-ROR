@@ -17,7 +17,7 @@ To run this application locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/Blog-app-with-ROR.git
+   git clone https://github.com/AK133/Blog-app-with-ROR.git
    cd Blog-app-with-ROR
    ```
 
